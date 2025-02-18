@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    align-items: center;
+}
+
+.canvas {
+    border-radius: 20px;
+    background-color: rgb(156, 196, 229);
+    box-shadow: 0px 8px 8px 0px gray;
+}
