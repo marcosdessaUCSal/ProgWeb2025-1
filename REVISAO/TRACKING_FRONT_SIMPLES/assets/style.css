@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+.container {
+    min-width: 800px;
+    width: 90%;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+}
+
+.meu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    height: 80px;
+    padding: 0px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 2px 3px 2px rgb(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.figura {
+    margin-top: 6px;
+    display: flex;
+    width: 100px;
+    height: 70px;
+    justify-content: center;
+}
+
+.figura img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figura:hover {
+    justify-content: right;
+}
+
+.meu-header h2 {
+    color: cornflowerblue;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meu-header h3 {
+    color: darkblue;
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.corpo {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    z-index: 0;
+}
+
+.esquerda {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-width: 300px;
+    width: 30%;
+}
+
+.direita {
+    display: block;
+    margin-right: 0;
+    margin-left: 2em;
+    padding: 0;
+    border-color: steelblue;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    width: 70%;
+    height: fit-content;
+    min-width: 400px;
+}
+
+.linha-esq {
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    width: 100%;
+}
+
+.input-codigo {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: steelblue;
+    border-width: 0 0 2px 0;
+    width: 100%;
+    margin: 0;
+    border-color: rgba(30, 28, 28, 0.7);
+    height: 2em;
+    padding-left: 10px;
+    font-size: 1.1em;
+    border-radius: 12px 12px 0 0;
+}
+
+.input-codigo:focus {
+    background-color: white;
+    outline: none;
+}
+
+.btn-inativo {
+    box-sizing: border-box;
+    user-select: none;
+    margin-top: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    color: black;
+    font-weight: 200;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(201, 201, 201);
+}
+
+.btn-ativo {
+    box-sizing: border-box;
+    user-select: none;
+    margin-top: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: steelblue;
+}
+
+.btn-ativo:active {
+    background-color: darkorange;
+    color: black;
+}
+
+
+.topo {
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
+    border-radius: 6px 6px 0 0;
+    background-color: rgb(58, 111, 155);
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.base {
+    padding: 5px;
+    padding-bottom: 4px;
+    border-radius: 0 0 6px 6px;
+    background-color: rgb(58, 111, 155);
+}
+
+.linha-clara {
+    margin: 0;
+    padding: 5px;
+    background-color: lavender;
+    color: steelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.linha-escura {
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(202, 202, 227);
+    color: steelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.linha-clara:hover, .linha-escura:hover {
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+
+.quadro-mensagem {
+    margin-top: 20px;
+    padding: 30px 10px 30px 10px;
+    height: fit-content;
+    background-color: rgb(178, 176, 176, 0.4);
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: darkred;
+    visibility: hidden;
+}
