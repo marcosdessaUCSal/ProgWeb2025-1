@@ -55,10 +55,11 @@
 					Rastreio rastreio = (Rastreio) sessao.getAttribute("registros");
 					if (rastreio != null) {
 						String classeLinha;
-						int comp = rastreio.getRegistros().size();
-						int i = comp - 1;
-						for (Registro reg : rastreio.getRegistros()) {
-							classeLinha = (comp - i--) % 2 == 0 ? "linha-escura" : "linha-clara";
+						Registro reg;
+						for (int i = rastreio.getRegistros().size() - 1; i >= 0; i--) {
+							classeLinha = (rastreio.getRegistros().size() - i) % 2 == 0 ?
+									"linha-escura" : "linha-clara";
+							reg = rastreio.getRegistros().get(i);
 							%>
 							<div class="<%= classeLinha %>">
 								<div><%= reg.data %></div>
