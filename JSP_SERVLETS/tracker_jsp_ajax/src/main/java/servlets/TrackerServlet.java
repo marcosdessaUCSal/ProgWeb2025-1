@@ -36,7 +36,6 @@ public class TrackerServlet extends HttpServlet {
 		sessao.setAttribute("registros", rastreio);
 		String visivel = rastreio == null? "mensagem-visivel" : "mensagem-invisivel";
 		sessao.setAttribute("visivel", visivel);
-		response.sendRedirect("index.jsp");
 	}
 
 }
