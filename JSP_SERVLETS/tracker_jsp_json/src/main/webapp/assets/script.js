@@ -42,7 +42,6 @@ function procurar(codigo) {
 	})
 		.then(
 			response => {
-				console.log('')
 				if (!response.ok) {
 					// TODO: DECIDA O QUE FAZER
 				}
@@ -50,7 +49,6 @@ function procurar(codigo) {
 			}
 		)
 		.then(dados => {
-			console.log(dados)
 			escreveRegistros(dados);
 			if (dados.length == 0) {
 				document.getElementById('mensagem').style.visibility = 'visible';
