@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.container-cabecalho h3 {
+    font-weight: 600;
+    font-size: 3em;
+    color: steelblue;
+    text-shadow: 2px 2px black;
+}
+
+.container-nav {
+    text-align: center;
+    padding: 10px;
+    background-color: steelblue;
+    box-shadow: 0 5px 10px 0px rgb(87, 84, 105);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    background-color: rgb(255, 255, 255, 0.15);
+    width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 15px;
+    text-decoration: none;
+    color: rgb(33, 29, 61);
+    box-shadow: 2px 2px 3px 1px rgb(0, 0, 0, 0.2);
+}
+
+.btn-nav:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.btn-nav:active {
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.6);
+}
+
+.container-geral {
+    overflow: auto;
+}
+
+.container-aula {
+    color:rgb(0, 0, 0, 0.6);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: lightgray;
+    width: 700px;
+    padding: 8px;
+    border: 4px solid steelblue;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px 0px black;
+}
+
+.container-aula-edit {
+    color:rgb(0, 0, 0, 0.6);
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    background-color: lightgray;
+    width: 700px;
+    padding: 20px 8px 20px 8px;
+    border: 4px solid steelblue;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px 0px black;
+}
+
+.container-linha1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-linha2 {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.container-btns {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.texto {
+    color: black;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: rgb(0, 0, 0, 0.4);
+    width: fit-content;
+    margin-top: 10PX;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(33, 29, 61);
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.btn:active {
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.inp-hora {
+    font-size: 1.2em;
+    color: black;
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 70px;
+    border-radius: 6px;
+}
+
+.inp-dur {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 50px;
+    border-radius: 6px;
+}
+
+.inp-data {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    margin-left: 15px;
+    background-color: white;
+    width: 150px;
+    border-radius: 6px;
+}
+
+.inp-disc {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    margin-left: 15px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 160px;
+    border-radius: 6px;
+}
+.inp-disc {
+    background-color: white;
+}
+
+.inp-ass {
+    font-size: 1.2em;
+    color: black;
+    padding-left: 5px;
+    background-color: rgb(0, 0, 0, 0.2);
+    width: 400px;
+    border-radius: 6px;
+}
