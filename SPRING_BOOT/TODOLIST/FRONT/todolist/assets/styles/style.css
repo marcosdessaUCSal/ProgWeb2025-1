@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: steelblue;
+}
+
+.nome {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: steelblue;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgb(0, 0, 0, 0.4);
+}
+
+.container-entrada {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+}
+
+.container-entrada .entrada {
+    background-color: white;
+    color: steelblue;
+    border: 3px solid goldenrod;
+    height: 2em;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.btn-mais {
+    margin-left: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.btn-mais:active {
+    background-color: rgb(80, 118, 189);
+}
+
+.btn-undo {
+    margin-left: 5px;
+    background-color: darkcyan;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+.btn-undo:active {
+    background-color: rgb(3, 82, 82);
+}
+
+.container-list {
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+    height: fit-content;
+}
+
+.registro {
+    width: 90%;
+    display: grid;
+    padding: 10px;
+    margin: auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-content: center;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(0, 0, 255, 0.2);
+    border-style: solid;
+}
+
+.registro:hover {
+    background-color: gainsboro;
+}
+
+.registro .texto {
+    color: darkblue;
+}
+
+.registro .texto-riscado {
+    color: slategray;
+    text-decoration: line-through;
+    text-decoration-color: darkblue;
+}
+
+.icone {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    width: 20px;
+    height: auto;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(0.8);
+}
+
+.container-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn {
+    margin: 5px;
+    height: 2em;
+    font-size: 1em;
+    color: darkblue;
+    background-color: silver;
+    border-radius: 4px;
+}
+
+.btn.danger {
+    background-color: darkred;
+    color: white;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+}

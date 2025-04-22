@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nome">TODO List</div>
+        <div class="container-entrada">
+            <input type="text" id="entrada" class="entrada">
+            <div class="btn-mais" onclick="adicionarTarefa()">+</div>
+            <div class="btn-undo" onclick="reset()">
+                <img src="/assets/img/undo-icon.svg" alt="">
+            </div>
+        </div>
+
+        <div class="container-list" id="tarefas">
+            <!-- AQUI FICAM AS TAREFAS A SEREM FEITAS -->
+        </div>
+
+        <div class="container-btns">
+            <button class="btn" onclick="marcarTudo()">MARCAR TUDO</button>
+            <button class="btn" onclick="desmarcarTudo()">DESMARCAR TUDO</button>
+            <button class="btn danger" onclick="removerMarcados()">REM. MARCADOS</button>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>
