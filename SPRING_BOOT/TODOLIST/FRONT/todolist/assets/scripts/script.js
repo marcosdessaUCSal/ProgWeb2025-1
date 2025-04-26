@@ -18,15 +18,12 @@ var arrayTarefas = new Array();
 
 
 // =================================================
-//      INICIALIZAÇÃO DOS DADOS MOCKADOS
+//      EXIBIÇÃO DOS DADOS
 // =================================================
 
 function exibeTarefas() {
     fetch('http://localhost:8080/todo/tarefas', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        method: 'GET'
     })
         .then(response => response.json())
         .then(data => {
@@ -113,7 +110,7 @@ function remova(id) {
 function adicionarTarefa() {
     let txt = document.getElementById('entrada').value;
     document.getElementById('entrada').value = '';
-    exibeTarefas();
+    if (!validaTarefa(txt)) return;
     fetch('http://localhost:8080/todo/add', {
         method: 'POST',
         headers: {
@@ -184,7 +181,13 @@ function reset() {
 }
 
 
-
+// Verifica se a tarefa não é vazia
+function validaTarefa(txt) {
+    if (txt.trim() == '') {
+        return false;
+    }
+    return true;
+}
 
 
 
@@ -200,6 +203,5 @@ function reset() {
 //      INICIANDO TUDO
 // =================================================
 
-// start();
 exibeTarefas();
 

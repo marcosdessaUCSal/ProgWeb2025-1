@@ -1,4 +1,4 @@
-package com.todolist.config.dto;
+package com.todolist.dto;
 
 import com.todolist.model.Tarefa;
 

@@ -6,11 +6,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 
-import com.todolist.config.dto.TarefaDto;
+import com.todolist.dto.TarefaDto;
 import com.todolist.model.Tarefa;
 import com.todolist.repository.TarefaRepository;
 

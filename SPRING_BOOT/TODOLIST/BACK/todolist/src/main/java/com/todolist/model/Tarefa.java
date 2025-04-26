@@ -2,7 +2,7 @@ package com.todolist.model;
 
 import java.io.Serializable;
 
-import com.todolist.config.dto.TarefaDto;
+import com.todolist.dto.TarefaDto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
