@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: steelblue;
+    font-family: Share Tech;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgb(0, 0, 0, 0.4);
+}
+
+.container-entrada {
+    display: grid;
+    grid-template-columns: 6fr 5fr 1fr 1fr;
+}
+
+.container-entrada .entrada {
+    background-color: white;
+    color: steelblue;
+    border: 3px solid goldenrod;
+    height: 2em;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.nome {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: steelblue;
+}
+
+.container-list {
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+    height: fit-content;
+}
+
+.registro {
+    width: 70%;
+    display: grid;
+    padding: 10px;
+    margin: auto;
+    grid-template-columns: 1fr 10fr 8fr;
+    align-content: center;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgb(0, 0, 255, 0.2);
+    border-style: solid;
+    font-size: 1.3rem;
+}
+
+.registro:hover {
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+input[type="checkbox"] {
+    transform: scale(0.8);
+}
+
+.contato {
+    margin-left: 20px;
+    color: darkblue;
+}
+
+.email {
+    color: darkred;
+}
+
+.btn-undo {
+    margin-right: 5px;
+    background-color: midnightblue;
+    align-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.4);
+}
+
+.btn {
+    margin: 5px;
+    height: 2em;
+    font-size: 1em;
+    color: darkblue;
+    background-color: silver;
+    border-width: 0;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.4);
+}
+
+.btn:active,
+.btn.danger:active {
+    background-color: black;
+    color: white;
+}
+
+
+.btn.danger {
+    background-color: darkred;
+    color: white;
+}
+
+.btn-mais {
+    margin-right: 8px;
+    background-color: steelblue;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 900;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 1px rgb(0, 0, 0, 0.6);
+}
+
+.container-btns {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 1fr 5fr;
+}
+
+.novo-escondido {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition:
+        opacity 0.4s ease,
+        height 0.4s ease;
+}
+
+.novo-visivel {
+    opacity: 1;
+    /* visibility: visible; */
+    height: 2.2em;
+    margin-bottom: 30px;
+    transition:
+        height 0.4s ease,
+        opacity 0.8s ease;
+}
+
+
+

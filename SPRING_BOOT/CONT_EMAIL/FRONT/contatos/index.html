@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nome">MEUS CONTATOS</div>
+
+        <div class="container-list">
+            <div class="container-entrada novo-escondido" id="novo">
+                <input type="text" id="nome" class="entrada">
+                <input type="text" id="email" class="entrada">
+                <div class="btn-mais" onclick="adicionarContato()">+</div>
+                <div class="btn-undo" onclick="cancel()">
+                    <img src="assets/img/cancel.svg">
+                </div>
+            </div>
+
+            <div id="contatos">
+                <!-- onde serão inseridos os dados -->
+            </div>
+
+
+        </div>
+
+        <div class="container-btns">
+            <button class="btn" onclick="marcarTudo()">MARCAR TUDO</button>
+            <button class="btn" onclick="desmarcarTudo()">DESMARCAR TUDO</button>
+            <button class="btn danger" onclick="removerMarcados()">REM. MARCADOS</button>
+            <div class="btn-undo" onclick="reset()">
+                <img src="assets/img/undo-icon.svg" alt="">
+            </div>
+            <div class="btn-mais" onclick="novoContato()">+ CONTATO</div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
