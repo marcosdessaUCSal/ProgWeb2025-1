@@ -6,15 +6,13 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     background-color: steelblue;
     font-family: Share Tech;
 }
 
 .container {
     width: 800px;
-    height: auto;
+    height: fit-content;
     margin: auto;
     margin-top: 50px;
     padding: 30px;
@@ -143,7 +141,6 @@ input[type="checkbox"] {
 
 .novo-escondido {
     opacity: 0;
-    visibility: hidden;
     height: 0;
     transition:
         opacity 0.4s ease,
@@ -152,7 +149,6 @@ input[type="checkbox"] {
 
 .novo-visivel {
     opacity: 1;
-    /* visibility: visible; */
     height: 2.2em;
     margin-bottom: 30px;
     transition:

@@ -140,12 +140,14 @@ function reset() {
 
 function adicionarContato() {
     editando = false;
-    let nome = document.getElementById('nome').value;
-    let email = document.getElementById('email').value;
-    if (!contatoValidado(nome, email)) {
+    let nome = document.getElementById('nome');
+    let email = document.getElementById('email');
+    if (!contatoValidado(nome.value, email.value)) {
         const novo = document.getElementById('novo');
         novo.classList.remove('novo-visivel');
         novo.classList.add('novo-escondido');
+        nome.value = '';
+        email.value = '';
         return;
     }
     fetch('http://localhost:8080/contatos/add', {
@@ -196,8 +198,7 @@ function cancel() {
 function contatoValidado(nome, email) {
     nome = nome.trim();
     email = email.trim();
-    if (nome == '' && email == '') return false;
-    return true;
+    return (nome == '' || email == '') ? false : true;
 }
 
 
