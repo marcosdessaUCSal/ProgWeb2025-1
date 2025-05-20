@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(55, 98, 134);
+    font-family: Share Tech;
+}
+
+header {
+    color: goldenrod;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-shadow: 3px 3px black;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.painel {
+    display: block;
+    margin: 30px;
+    height: fit-content;
+}
+
+.container-registros {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.topo-registros {
+    padding: 0px;
+    padding-top: 5px;
+    border-radius: 6px 6px 0 0;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.cabecalho-registros {
+    font-size: 1.2em;
+    text-align: left;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: orange;
+    padding: 5px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.msg-titulo {
+    font-size: 1.2em;
+    text-align: center;
+    color: orange;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.linha-reg {
+    align-items: center;
+    text-align: left;
+    padding: 5px;
+    padding-left: 30px;
+    margin: 0;
+    border-top: 1px solid rgb(255, 165, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.2);
+    color: steelblue;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-size: 1.3em;
+}
+
+.linha-msg {
+    text-align: center;
+    padding: 5px;
+    padding-left: 30px;
+    margin: 0;
+    border-top: 1px solid rgb(255, 165, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.2);
+    color: deepskyblue;
+    font-family: IBM Plex Mono;
+    font-size: 1.3em;
+}
+
+.base-registros {
+    padding: 5px;
+    padding-bottom: 4px;
+    border-radius: 0 0 6px 6px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.cont-maior {
+    display: block;
+    width: 100%;
+}
+
+.duas-colunas {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    width: 700px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.coluna-esq {
+    display: block;
+    margin-left: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: rgb(210, 191, 163);
+    box-shadow: inset 2px 2px 4px 2px rgb(255, 255, 255, 0.8),
+        inset -3px -5px 4px 2px rgb(0, 0, 0, 0.6),
+        0px 12px 12px 0px rgb(0, 0, 0, 0.8);
+}
+
+.coluna-dir {
+    display: block;
+    margin-right: auto;
+    margin-left: 2em;
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: rgb(175, 198, 222);
+    box-shadow: inset 2px 2px 4px 2px rgb(255, 255, 255, 0.8),
+        inset -3px -5px 4px 2px rgb(0, 0, 0, 0.6),
+        0px 12px 12px 0px rgb(0, 0, 0, 0.8);
+}
+
+.tamanho-pequeno {
+    width: 100px;
+    height: 130px;
+    margin-top: 20px;
+    transition:
+        margin-top 0.2s ease,
+        height 0.4s ease,
+        width 0.2s ease;
+}
+
+.tamanho-grande {
+    width: 500px;
+    height: 210px;
+    margin-top: -60px;
+    transition:
+        margin-top 0.4s ease,
+        height 0.4s ease,
+        width 0.4s ease;
+}
+
+.sem-tamanho {
+    height: 0;
+}
+
+.sem-largura {
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.largura-normal {
+    width: 700px;
+    transition: width 0.4s ease;
+}
+
+.visivel {
+    opacity: 1;
+    width: 600px;
+    margin-top: 0px;
+    transition:
+        margin-top 0.2s ease,
+        width 0.2s ease,
+        opacity 0.5s ease;
+}
+
+.invisivel {
+    opacity: 0;
+    width: 0;
+    margin-top: -250px;
+    transition:
+        margin-top 0.2s ease,
+        width 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.container-mascara {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.container-mascara img {
+    margin: auto;
+    width: 40px;
+    transition:
+        width 0.2s ease;
+}
+
+.container-mascara img:hover {
+    margin: auto;
+    width: 60px;
+    transition:
+        width 0.2s ease;
+}
+
+.titulo {
+    margin: auto;
+    width: fit-content;
+    font-weight: 900;
+}
+
+.col-nome {
+    color: goldenrod;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    font-family: IBM Plex Mono;
+    font-weight: 900;
+}
+
+.col-texto {
+    color: chartreuse;
+    font-family: IBM Plex Mono;
+}
+
+.col-id {
+    text-align: left;
+    color: cornflowerblue;
+    font-family: IBM Plex Mono;
+}
+
+.col-email {
+    color: chartreuse;
+    font-family: IBM Plex Mono;
+}
+
+.campo-texto {
+    background-color: white;
+    color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    width: 100%;
+    height: auto;
+    resize: none;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: IBM Plex Mono;
+    font-size: 1.2rem;
+    font-weight: 900;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 3px 2px rgb(0, 0, 0, 0.7);
+}
+
+.btn-ativo {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Share Tech;
+    font-weight: 900;
+    font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: orange;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: inset 2px 2px 4px 2px rgb(255, 255, 255, 0.8),
+        inset -3px -5px 4px 2px rgb(0, 0, 0, 0.8),
+        0px 4px 4px 0px rgb(0, 0, 0, 0.8);
+
+}
+
+
+.btn-inativo {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Share Tech;
+    font-weight: 900;
+    font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: lightgray;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: inset 2px 2px 4px 2px rgb(255, 255, 255, 0.8),
+        inset -3px -5px 4px 2px rgb(0, 0, 0, 0.8),
+        0px 4px 4px 0px rgb(0, 0, 0, 0.8);
+}
+
+.conteudo-btn {
+    display: inline-block;
+    transition: transform 0.1s ease;
+}
+
+.btn-ativo:active {
+    box-shadow: inset 2px 2px 4px 2px rgb(0, 0, 0, 0.8);
+    transition:
+        transform 0.1s ease;
+}
+
+.btn-inativo:active {
+    box-shadow: inset 2px 2px 4px 2px rgb(0, 0, 0, 0.8);
+    transition:
+        transform 0.1s ease;
+}
+
+.btn-ativo:active .conteudo-btn {
+    transform: translate(4px, 4px);
+    transition:
+        transform 0.1s ease;
+}
+
+.btn-inativo:active .conteudo-btn {
+    transform: translate(4px, 4px);
+    transition:
+        transform 0.1s ease;
+}
+
+
+.email {
+    color: darkgoldenrod;
+}

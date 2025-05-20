@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont-maior">
+        <header>
+            <h2>Exercício: Validando E-mail</h2>
+        </header>
+        <div class="painel">
+            <button class="btn-ativo" onclick="getEmails()">
+                <div class="conteudo-btn">VER EMAILS</div>
+            </button>
+            <button class="btn-ativo" onclick="esconderRegistros()">
+                <div class="conteudo-btn">ESCONDER MENSAGENS</div>
+            </button>
+            <button class="btn-ativo" onclick="mock()">
+                <div class="conteudo-btn">MOCKAR EMAILS</div>
+            </button>
+            <button class="btn-ativo" onclick="limpar()">
+                <div class="conteudo-btn">LIMPAR EMAILS</div>
+            </button>
+        </div>
+        <div class="duas-colunas">
+            <div class="coluna-esq tamanho-grande" id="col-esq">
+                <div class="container-mascara">
+                    <img src="assets/img/sem-mascara.svg" onclick="mudarParaDir()">
+                </div>
+                <div class="titulo">SEM VALIDAÇÃO NO FRONT</div>
+                <textarea rows="1" class="campo-texto visivel" id="area-esq"></textarea>
+                <button class="btn-ativo visivel" id="btn-esq" onclick="enviar(false)">
+                    <span class="conteudo-btn">ENVIAR</span>
+                </button>
+            </div>
+            <div class="coluna-dir tamanho-pequeno" id="col-dir">
+                <div class="container-mascara">
+                    <img src="assets/img/com-mascara.svg" onclick="mudarParaEsq()">
+                </div>
+                <div class="titulo">COM VALIDAÇÃO NO FRONT</div>
+                <textarea rows="1" class="campo-texto invisivel" id="area-dir"></textarea>
+                <button class="btn-inativo invisivel" id="btn-dir" onclick="enviar(true)">
+                    <span class="conteudo-btn">ENVIAR</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container-registros invisivel sem-tamanho invisivel" id="cont-reg"></div>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
