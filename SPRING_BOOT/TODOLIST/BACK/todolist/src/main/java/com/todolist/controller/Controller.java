@@ -69,7 +69,7 @@ public class Controller {
 	public ResponseEntity<Object> marcarOuDesmarcar(@PathVariable("id") Long id) {
 		try {
 			tarefaService.inverterMarcado(id);
-			return ResponseEntity.ok().body("Itens removidos com sucesso.");
+			return ResponseEntity.ok().body("Marcado/desmarcado");
 		} catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Houve um erro inesperado");
 		}
